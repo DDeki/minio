@@ -1,1 +1,23 @@
+# MinIO client configuration
+mc-config/
+
+# Node modules
+node_modules/
+
+# Environment variables
 .env
+
+# macOS files
+.DS_Store
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test files
+test_image.png
+
+# Docker volumes
+minio_data/
