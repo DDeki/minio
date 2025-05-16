@@ -37,3 +37,6 @@ services:
       - ./mc-config:/root/.mc
     env_file:
       - .env
+
+volumes:
+  minio_data:
