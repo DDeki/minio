@@ -1,9 +1,6 @@
 version: '3.8'
 
 services:
-  # For production scalability, use the distributed mode by uncommenting and configuring the following:
-  # minio1, minio2, minio3, minio4 services and updating the command to use all 4 nodes
-  # Example: server http://minio{1...4}/data{1...2}
   minio:
     image: minio/minio:latest
     container_name: minio
