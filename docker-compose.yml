@@ -34,7 +34,6 @@ services:
     entrypoint: >
       /bin/sh -c "
         sleep 10;
-        mc alias set local http://minio:9000 ${MINIO_ROOT_USER} ${MINIO_ROOT_PASSWORD} &&
         sh /init/setup.sh;
         exit 0;
       "
