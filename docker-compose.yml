@@ -26,6 +26,8 @@ services:
       interval: 30s
       timeout: 10s
       retries: 5
+    networks:
+      - minio_network
 
   setup:
     image: minio/mc:latest
@@ -42,6 +44,12 @@ services:
       - ./mc-config:/root/.mc
     env_file:
       - .env
+    networks:
+      - minio_network
 
 volumes:
   minio_data:
+
+networks:
+  minio_network:
+    external: true
